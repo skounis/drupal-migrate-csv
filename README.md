@@ -28,3 +28,5 @@ migrate was enabled successfully.                                               
 migrate_source_csv was enabled successfully.                                                                                                               [ok]
 stavross-air-14:csv-migration-example skounis$ 
 ```
+
+Clear cache: `drush cr`
