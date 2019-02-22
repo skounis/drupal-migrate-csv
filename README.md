@@ -119,4 +119,7 @@ source:
 - migrate: `drush migrate-import migrate_sponsors`
 
 ```
+stavross-air-14:csv-migration-example skounis$ drush migrate-import migrate_sponsors
+Processed 3 items (3 created, 0 updated, 0 failed, 0 ignored) - done with 'migrate_sponsors_3'                    [status]
+stavross-air-14:csv-migration-example skounis$ 
 ```
