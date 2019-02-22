@@ -35,3 +35,6 @@ Clear cache: `drush cr`
 
 ### Prepare CVS
 - https://gist.github.com/skounis/8f64fea5ad543a53cb2e2c4eb884c0e6#file-sponsors-06-csv
+
+### Describe the migration
+Describe the migration and map the fields 
