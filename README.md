@@ -40,3 +40,9 @@ Clear cache: `drush cr`
 Describe the migration and map the fields 
 
 - [Sponsors `.yml`](https://github.com/skounis/drupal-migrate-csv/blob/master/yml/sponsors.migrate_csv.yml)
+
+#### Import the configuration
+- Configuration > Synchronize > Import > Single import
+- Configuration type: `Simple Configuration`
+- Name: `migrate_sponsors`
+
