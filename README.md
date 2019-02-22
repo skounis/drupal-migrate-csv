@@ -8,7 +8,7 @@
 ### Drupal Distribution
 - https://www.morethanthemes.com/themes/eventplus
 
-### Installed / Enabled Modules 
+### Install / Enable Modules 
 - [Migrate Source CSV](https://www.drupal.org/project/migrate_source_csv)
 
 Download moduel: `drush dl migrate_source_csv`
