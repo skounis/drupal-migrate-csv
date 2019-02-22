@@ -72,7 +72,9 @@ migrate_tools defines the following permissions: administer migrations
 Download module: `drush dl migrate_file`
 
 ```
-
+stavross-air-14:csv-migration-example skounis$ drush dl migrate_file
+Project migrate_file (8.x-1.1) downloaded to /Applications/MAMP/htdocs/csv-migration-example//modules/migrate_file.                                        [success]
+stavross-air-14:csv-migration-example skounis$ 
 ```
 
 Enable module and depedences `drush en migrate_file`
