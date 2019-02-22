@@ -30,3 +30,8 @@ stavross-air-14:csv-migration-example skounis$
 ```
 
 Clear cache: `drush cr`
+
+## Migrate Sponsors
+
+### Prepare CVS
+- https://gist.github.com/skounis/8f64fea5ad543a53cb2e2c4eb884c0e6#file-sponsors-06-csv
