@@ -67,15 +67,15 @@ migrate_tools was enabled successfully.                                         
 migrate_tools defines the following permissions: administer migrations   
 ```
 
-#### [Image Import](image_import)
+#### [Migrate File](migrate_file)
 
-Download module: `drush dl image_import`
-
-```
+Download module: `drush dl migrate_file`
 
 ```
 
-Enable module and depedences `drush en image_import`
+```
+
+Enable module and depedences `drush en migrate_file`
 
 ```
  
