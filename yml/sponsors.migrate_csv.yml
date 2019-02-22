@@ -18,12 +18,12 @@ source:
     - id
   column_names:
     0:
-      id: 'Id'
+      id: 'id'
     1:
-      title: 'Title'
+      title: 'title'
     2:
       field_mt_spn_body: 'Body'
-    3:
+    4:
       field_mt_spn_logo: 'Logo'
     constants:
       file_destination: 'public://images/'
