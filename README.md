@@ -11,7 +11,7 @@
 ### Install / Enable Modules 
 - [Migrate Source CSV](https://www.drupal.org/project/migrate_source_csv)
 
-Download moduel: `drush dl migrate_source_csv`
+Download module: `drush dl migrate_source_csv`
 
 ```
 stavross-air-14:csv-migration-example skounis$ drush dl migrate_source_csv
@@ -29,7 +29,27 @@ migrate_source_csv was enabled successfully.                                    
 stavross-air-14:csv-migration-example skounis$ 
 ```
 
-Clear cache: `drush cr`
+- [Migrate Plus](migrate_plus)
+Download module: `drush dl migrate_plus`
+
+```
+stavross-air-14:csv-migration-example skounis$ drush dl migrate_plus
+Project migrate_plus (8.x-4.1) downloaded to /Applications/MAMP/htdocs/csv-migration-example//modules/migrate_plus.                                        [success]
+Project migrate_plus contains 6 modules: migrate_example_advanced_setup, migrate_example_advanced, migrate_json_example, migrate_example_setup, migrate_example, migrate_plus.
+stavross-air-14:csv-migration-example skounis$ 
+```
+
+Enable module and depedences `drush en migrate_plus`
+
+```
+stavross-air-14:csv-migration-example skounis$ drush en migrate_plus
+The following extensions will be enabled: migrate_plus
+Do you really want to continue? (y/n): y
+migrate_plus was enabled successfully.     
+```
+
+
+- Clear cache: `drush cr`
 
 ## Migrate Sponsors
 
