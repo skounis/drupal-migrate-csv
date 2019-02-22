@@ -66,3 +66,15 @@ Describe the migration and map the fields
 - Configuration type: `Migration`
 - Name: `migrate_sponsors`
 
+### Import
+Copy the `sponsors.csv` file in a public directory of Drupal. This was defined in the description file in the section:
+
+```
+source:
+  plugin: csv
+  path: public://csv/sponsors.csv
+```
+
+
+
+
