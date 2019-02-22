@@ -9,7 +9,7 @@
 - https://www.morethanthemes.com/themes/eventplus
 
 ### Install / Enable Modules 
-- [Migrate Source CSV](https://www.drupal.org/project/migrate_source_csv)
+#### [Migrate Source CSV](https://www.drupal.org/project/migrate_source_csv)
 
 Download module: `drush dl migrate_source_csv`
 
@@ -29,7 +29,7 @@ migrate_source_csv was enabled successfully.                                    
 stavross-air-14:csv-migration-example skounis$ 
 ```
 
-- [Migrate Plus](migrate_plus)
+#### [Migrate Plus](migrate_plus)
 Download module: `drush dl migrate_plus`
 
 ```
@@ -48,7 +48,7 @@ Do you really want to continue? (y/n): y
 migrate_plus was enabled successfully.     
 ```
 
-- [Migrate tools](migrate_tools)
+#### [Migrate tools](migrate_tools)
 
 Download module: `drush dl migrate_tools`
 
@@ -66,6 +66,21 @@ Do you really want to continue? (y/n): y
 migrate_tools was enabled successfully.                                                                                                                    [ok]
 migrate_tools defines the following permissions: administer migrations   
 ```
+
+#### [Image Import](image_import)
+
+Download module: `drush dl image_import`
+
+```
+
+```
+
+Enable module and depedences `drush en image_import`
+
+```
+ 
+```
+
 
 - Clear cache: `drush cr`
 
