@@ -14,3 +14,11 @@
 ```
 drush dl migrate_source_csv
 ```
+
+```
+Project migrate_source_csv (8.x-2.2) downloaded to /Applications/MAMP/htdocs/csv-migration-example//modules/migrate_source_csv.       [success]
+```
+
+```
+drush en migrate_source_csv
+```
