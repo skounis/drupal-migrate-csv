@@ -1,0 +1,47 @@
+#
+# Imports content from
+# https://gist.github.com/skounis/8f64fea5ad543a53cb2e2c4eb884c0e6
+#
+# https://www.drupal.org/docs/8/api/migrate-api/migrate-destination-plugins-examples/migrating-files-and-images
+# https://www.drupal.org/docs/8/api/migrate-api/migrate-source-plugins/migrating-data-from-a-csv-source
+#
+id: migrate_sponsors
+migration_group: null
+label: 'CSV Sponsors migration'
+source:
+  plugin: csv
+  path: public://csv/sponsors.csv
+  header_row_count: 1
+  # Column delimiter. Comma (,) by default.
+  delimiter: ','
+  keys:
+    - id
+  column_names:
+    0:
+      id: 'Id'
+    1:
+      title: 'Title'
+    2:
+      field_mt_spn_body: 'Body'
+    3:
+      field_mt_spn_logo: 'Logo'
+    constants:
+      file_destination: 'public://images/'
+process:
+  type:
+    plugin: default_value
+    default_value: mt_sponsor
+  title: title
+  field_mt_spn_body: field_mt_spn_body
+  uid:
+    plugin: default_value
+    default_value: 1
+  field_mt_spn_logo:
+    plugin: image_import
+    source: field_mt_spn_logo
+    destination: 'constants/file_destination'
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  required: {  }
+optional: {  }
