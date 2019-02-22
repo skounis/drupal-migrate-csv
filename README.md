@@ -48,6 +48,24 @@ Do you really want to continue? (y/n): y
 migrate_plus was enabled successfully.     
 ```
 
+- [Migrate tools](migrate_tools)
+
+Download module: `drush dl migrate_tools`
+
+```
+stavross-air-14:csv-migration-example skounis$ drush dl migrate_tools
+Project migrate_tools (8.x-4.1) downloaded to /Applications/MAMP/htdocs/csv-migration-example//modules/migrate_tools.                                      [success]
+```
+
+Enable module and depedences `drush en migrate_tools`
+
+```
+stavross-air-14:csv-migration-example skounis$ drush en migrate_tools
+The following extensions will be enabled: migrate_tools
+Do you really want to continue? (y/n): y
+migrate_tools was enabled successfully.                                                                                                                    [ok]
+migrate_tools defines the following permissions: administer migrations   
+```
 
 - Clear cache: `drush cr`
 
@@ -75,6 +93,9 @@ source:
   path: public://csv/sponsors.csv
 ```
 
+#### Run the migration
 
+- migrate: `drush migrate-import migrate_sponsors`
 
-
+```
+```
