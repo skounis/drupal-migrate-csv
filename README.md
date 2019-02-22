@@ -80,7 +80,11 @@ stavross-air-14:csv-migration-example skounis$
 Enable module and depedences `drush en migrate_file`
 
 ```
- 
+stavross-air-14:csv-migration-example skounis$ drush en migrate_file
+The following extensions will be enabled: migrate_file
+Do you really want to continue? (y/n): y
+migrate_file was enabled successfully.                                                                                                                     [ok]
+stavross-air-14:csv-migration-example skounis$ 
 ```
 
 
