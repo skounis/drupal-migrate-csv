@@ -63,6 +63,6 @@ Describe the migration and map the fields
 
 #### Import the configuration
 - Configuration > Synchronize > Import > Single import
-- Configuration type: `Simple Configuration`
+- Configuration type: `Migration`
 - Name: `migrate_sponsors`
 
