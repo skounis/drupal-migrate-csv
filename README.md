@@ -9,7 +9,7 @@
 - https://www.morethanthemes.com/themes/eventplus
 
 ### Install / Enable Modules 
-- [Migrate Source CSV](https://www.drupal.org/project/migrate_source_csv)
+#### [Migrate Source CSV](https://www.drupal.org/project/migrate_source_csv)
 
 Download module: `drush dl migrate_source_csv`
 
@@ -29,7 +29,7 @@ migrate_source_csv was enabled successfully.                                    
 stavross-air-14:csv-migration-example skounis$ 
 ```
 
-- [Migrate Plus](migrate_plus)
+#### [Migrate Plus](migrate_plus)
 Download module: `drush dl migrate_plus`
 
 ```
@@ -46,6 +46,45 @@ stavross-air-14:csv-migration-example skounis$ drush en migrate_plus
 The following extensions will be enabled: migrate_plus
 Do you really want to continue? (y/n): y
 migrate_plus was enabled successfully.     
+```
+
+#### [Migrate tools](migrate_tools)
+
+Download module: `drush dl migrate_tools`
+
+```
+stavross-air-14:csv-migration-example skounis$ drush dl migrate_tools
+Project migrate_tools (8.x-4.1) downloaded to /Applications/MAMP/htdocs/csv-migration-example//modules/migrate_tools.                                      [success]
+```
+
+Enable module and depedences `drush en migrate_tools`
+
+```
+stavross-air-14:csv-migration-example skounis$ drush en migrate_tools
+The following extensions will be enabled: migrate_tools
+Do you really want to continue? (y/n): y
+migrate_tools was enabled successfully.                                                                                                                    [ok]
+migrate_tools defines the following permissions: administer migrations   
+```
+
+#### [Migrate File](migrate_file)
+
+Download module: `drush dl migrate_file`
+
+```
+stavross-air-14:csv-migration-example skounis$ drush dl migrate_file
+Project migrate_file (8.x-1.1) downloaded to /Applications/MAMP/htdocs/csv-migration-example//modules/migrate_file.                                        [success]
+stavross-air-14:csv-migration-example skounis$ 
+```
+
+Enable module and depedences `drush en migrate_file`
+
+```
+stavross-air-14:csv-migration-example skounis$ drush en migrate_file
+The following extensions will be enabled: migrate_file
+Do you really want to continue? (y/n): y
+migrate_file was enabled successfully.                                                                                                                     [ok]
+stavross-air-14:csv-migration-example skounis$ 
 ```
 
 
@@ -75,6 +114,18 @@ source:
   path: public://csv/sponsors.csv
 ```
 
+#### Run the migration
 
+- migrate: `drush migrate-import migrate_sponsors`
 
+```
+stavross-air-14:csv-migration-example skounis$ drush migrate-import migrate_sponsors
+Processed 3 items (3 created, 0 updated, 0 failed, 0 ignored) - done with 'migrate_sponsors_3'                    [status]
+stavross-air-14:csv-migration-example skounis$ 
+```
+
+## References
+- https://drushcommands.com/drush-8x/migrate/
+- https://www.drupal.org/docs/8/api/migrate-api/executing-migrations
+- https://www.drupal.org/docs/8/api/migrate-api/migrate-source-plugins/migrating-data-from-a-csv-source
 
