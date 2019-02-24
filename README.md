@@ -29,7 +29,7 @@ migrate_source_csv was enabled successfully.                                    
 stavross-air-14:csv-migration-example skounis$ 
 ```
 
-#### [Migrate Plus](migrate_plus)
+#### [Migrate Plus](https://www.drupal.org/project/migrate_plus)
 Download module: `drush dl migrate_plus`
 
 ```
@@ -48,7 +48,7 @@ Do you really want to continue? (y/n): y
 migrate_plus was enabled successfully.     
 ```
 
-#### [Migrate tools](migrate_tools)
+#### [Migrate tools](https://www.drupal.org/project/migrate_tools)
 
 Download module: `drush dl migrate_tools`
 
@@ -67,7 +67,7 @@ migrate_tools was enabled successfully.                                         
 migrate_tools defines the following permissions: administer migrations   
 ```
 
-#### [Migrate File](migrate_file)
+#### [Migrate File](https://www.drupal.org/project/migrate_file)
 
 Download module: `drush dl migrate_file`
 
@@ -92,7 +92,7 @@ stavross-air-14:csv-migration-example skounis$
 
 ## Migrate Sponsors
 
-### Prepare CVS
+### Prepare the CVS
 - https://gist.github.com/skounis/8f64fea5ad543a53cb2e2c4eb884c0e6#file-sponsors-06-csv
 
 ### Describe the migration
